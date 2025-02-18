@@ -11,12 +11,20 @@
 
 /* Hecchos /*
 padre_de(abraham, herbert).
+
 padre_de(abraham,homero).
+
 padre_de(clancy,marge).
+
 padre_de(clancy,patty).
+
 padre_de(clancy,selma).
+
 padre_de(homero,bart).
+
 padre_de(homero,lisa).
+
 padre_de(homero,maggie).
+
 
 
