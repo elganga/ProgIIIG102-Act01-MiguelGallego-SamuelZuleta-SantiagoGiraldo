@@ -1,31 +1,50 @@
 # Taller 1 
 
-% Actividad 1 %
+# Actividad 1 
 
-% De acuerdo a la siguiente imagen de árbol genealógico, construya una lógica de %
-% predicados donde las relaciones directas se generen por hechos y las relacion de %
-% mas de una generación se obtengan mediante reglas.Ejemplo: padre(homero,bart) el %
-% anterior es un hecho y corresponde a una relación directa, mientras que %
-% abuelo(X,bart) puede ser una consulta hecha al programa, donde la relación abuelo %
-% (que es de más de 1 generación) debe ser obtenida por reglas, no por hechos. %
 
-% Hechos %
+ De acuerdo a la siguiente imagen de árbol genealógico, construya una lógica de 
+ predicados donde las relaciones directas se generen por hechos y las relacion de 
+ mas de una generación se obtengan mediante reglas.
+ 
+ Ejemplo: padre(homero, bart) el anterior es un hecho y corresponde a una relación directa, mientras que 
+ abuelo(X, bart) puede ser una consulta hecha al programa, donde la relación abuelo 
+ (que es de más de 1 generación) debe ser obtenida por reglas, no por hechos. 
 
-padre_de(abraham, herbert).
+# Hechos 
 
-padre_de(abraham,homero).
+padre(abraham, herbert).
 
-padre_de(clancy,marge).
+padre(abraham, homero).
 
-padre_de(clancy,patty).
+padre(clancy, marge).
 
-padre_de(clancy,selma).
+padre(clancy, patty).
 
-padre_de(homero,bart).
+padre(clancy, selma).
 
-padre_de(homero,lisa).
+padre(homero, bart).
 
-padre_de(homero,maggie).
+padre(homero, lisa).
 
+padre(homero, maggie).
+
+madre(mona, herbert).
+
+madre(mona, homero).
+
+madre(jacqueline, marge).
+
+madre(jacqueline, patty).
+
+madre(jacqueline, selma).
+
+madre(marge, bart).
+
+madre(marge, lisa).
+
+madre(marge, maggie).
+
+madre(selma, ling).
 
 
