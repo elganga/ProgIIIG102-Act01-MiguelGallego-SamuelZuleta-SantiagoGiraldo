@@ -79,5 +79,86 @@ mujer(maggie).
 
 mujer(ling).
 
+
+# Reglas 
+
+# Hij@s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Herman@s
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Ti@s
+
+tio(X, Y) :- hermano(X, Z), padre(Z, Y), hombre(X).
+
+tio(X, Y) :- hermano(X, Z), madre(Z, Y), hombre(X).
+
+tio(X, Y) :- hermana(X, Z), padre(Z, Y), mujer(X).
+
+tio(X, Y) :- hermana(X, Z), madre(Z, Y), mujer(X).
+
+
+
+
+
+# Abuel@s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Sobrinos
+
+
+
+
+
+
+
+
+
+
+
+# Primos
+
+
+
+
+
+
+
  
 
