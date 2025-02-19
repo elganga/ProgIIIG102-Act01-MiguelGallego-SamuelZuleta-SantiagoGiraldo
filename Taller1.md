@@ -13,6 +13,8 @@
 
 # Hechos 
 
+# Padre De:
+
 padre(abraham, herbert).
 
 padre(abraham, homero).
@@ -28,6 +30,8 @@ padre(homero, bart).
 padre(homero, lisa).
 
 padre(homero, maggie).
+
+# Madre De:
 
 madre(mona, herbert).
 
@@ -46,6 +50,8 @@ madre(marge, lisa).
 madre(marge, maggie).
 
 madre(selma, ling).
+
+# Asignación de género:
 
 hombre(abraham).
 
