@@ -47,4 +47,31 @@ madre(marge, maggie).
 
 madre(selma, ling).
 
+hombre(abraham).
+
+hombre(clancy).
+
+hombre(herbert).
+
+hombre(homero).
+
+hombre(bart).
+
+mujer(mona).
+
+mujer(jacqueline).
+
+mujer(marge).
+
+mujer(patty).
+
+mujer(selma).
+
+mujer(lisa).
+
+mujer(maggie).
+
+mujer(ling).
+
+ 
 
