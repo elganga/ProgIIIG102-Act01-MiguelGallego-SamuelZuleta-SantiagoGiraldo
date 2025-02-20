@@ -94,15 +94,13 @@ hija(X,Y) :- madre(Y,X), mujer(X).
 
 # Herman@s
 
-hermano(X,Y) :- padre(Z,X), padre(Z,Y), hombre(X), X\=Y.
-hermano(X,Y) :- madre(Z,X), madre(Z,Y)
+hermano(X, Y) :- padre(Z, X), padre(Z, Y), hombre(X), X \= Y.
 
+hermano(X, Y) :- madre(Z, X), madre(Z, Y), hombre(X), X \= Y.
 
+hermana(X, Y) :- padre(Z, X), padre(Z, Y), mujer(X), X \= Y.
 
-
-
-
-
+hermana(X, Y) :- madre(Z, X), madre(Z, Y), mujer(X), X \= Y.
 
 
 # Ti@s
