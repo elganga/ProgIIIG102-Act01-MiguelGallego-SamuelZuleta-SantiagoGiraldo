@@ -12,6 +12,7 @@
  abuelo(X, bart) puede ser una consulta hecha al programa, donde la relación abuelo 
  (que es de más de 1 generación) debe ser obtenida por reglas, no por hechos. 
 
+
 # Hechos 
 
 # Padre De:
@@ -32,6 +33,7 @@ padre(homero, lisa).
 
 padre(homero, maggie).
 
+
 # Madre De:
 
 madre(mona, herbert).
@@ -51,6 +53,7 @@ madre(marge, lisa).
 madre(marge, maggie).
 
 madre(selma, ling).
+
 
 # Asignación de género:
 
@@ -114,11 +117,7 @@ tio(X, Y) :- hermana(X, Z), padre(Z, Y), mujer(X).
 tio(X, Y) :- hermana(X, Z), madre(Z, Y), mujer(X).
 
 
-
-
-
 # Abuel@s
-
 
 abuelo(X, Y) :- hombre(X), padre(X, Z), padre(Z, Y).
 
@@ -131,22 +130,58 @@ abuela(X, Y) :- mujer(X), madre(X, Z), madre(Z, Y).
 
 # Sobrinos
 
+sobrino(X, Y) :- padre(Z, X), hermano(Y, Z), hombre(X).
+
+sobrino(X, Y) :- madre(Z, X), hermano(Y, Z), hombre(X).
+
+sobrino(X, Y) :- padre(Z, X), hermana(Y, Z), hombre(X).
+
+sobrino(X, Y) :- madre(Z, X), hermana(Y, Z), hombre(X).
 
 
+sobrina(X, Y) :- padre(Z, X), hermano(Y, Z), mujer(X).
 
+sobrina(X, Y) :- madre(Z, X), hermano(Y, Z), mujer(X).
 
+sobrina(X, Y) :- padre(Z, X), hermana(Y, Z), mujer(X).
 
-
-
-
+sobrina(X, Y) :- madre(Z, X), hermana(Y, Z), mujer(X).
 
 
 # Primos
 
+primo(X, Y) :- padre(Z, X), padre(W, Y), hermano(Z, W), hombre(X).
+
+primo(X, Y) :- padre(Z, X), padre(W, Y), hermana(Z, W), hombre(X).
+
+primo(X, Y) :- padre(Z, X), madre(W, Y), hermano(Z, W), hombre(X).
+
+primo(X, Y) :- padre(Z, X), madre(W, Y), hermana(Z, W), hombre(X).
+
+primo(X, Y) :- madre(Z, X), padre(W, Y), hermano(Z, W), hombre(X).
+
+primo(X, Y) :- madre(Z, X), padre(W, Y), hermana(Z, W), hombre(X).
+
+primo(X, Y) :- madre(Z, X), madre(W, Y), hermano(Z, W), hombre(X).
+
+primo(X, Y) :- madre(Z, X), madre(W, Y), hermana(Z, W), hombre(X).
 
 
+prima(X, Y) :- padre(Z, X), padre(W, Y), hermano(Z, W), mujer(X).
 
+prima(X, Y) :- padre(Z, X), padre(W, Y), hermana(Z, W), mujer(X).
 
+prima(X, Y) :- padre(Z, X), madre(W, Y), hermano(Z, W), mujer(X).
+
+prima(X, Y) :- padre(Z, X), madre(W, Y), hermana(Z, W), mujer(X).
+
+prima(X, Y) :- madre(Z, X), padre(W, Y), hermano(Z, W), mujer(X).
+
+prima(X, Y) :- madre(Z, X), padre(W, Y), hermana(Z, W), mujer(X).
+
+prima(X, Y) :- madre(Z, X), madre(W, Y), hermano(Z, W), mujer(X).
+
+prima(X, Y) :- madre(Z, X), madre(W, Y), hermana(Z, W), mujer(X).
 
 
 # Segundo punto de la actividad
@@ -184,12 +219,3 @@ crimen(coronel_west).
 # Ejecución del programa
 
 ![image](https://github.com/user-attachments/assets/a86b8ca1-acc7-4204-8274-fa659ba43962)
-
-
-
-
-
-
-
- 
-
