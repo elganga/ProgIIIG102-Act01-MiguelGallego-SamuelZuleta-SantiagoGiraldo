@@ -163,11 +163,25 @@ sus misiles les fueron vendidos por el Coronel West, quien es Estadounidense.
 Pruebe que el Coronel West es un criminal.
 
 
-#Persona involucrada
+# Persona involucrada
 
 persona(coronel_west).
 
-nacionalidad(usa, corea_sur).
+# Nacionalidad
+
+nacionalidad(usa, coronel_west).
+
+# Enemigos
+
+enemigo(usa, corea_sur).
+
+# Vende armas
+
+vende_misil(coronel_west, corea_sur).
+
+# Regla
+
+crimen(X):- nacionalidad(usa, X),vende_misil(X,Y),enemigo(usa, Y).
 
 
 
