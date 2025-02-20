@@ -183,6 +183,12 @@ vende_misil(coronel_west, corea_sur).
 
 crimen(X):- nacionalidad(usa, X),vende_misil(X,Y),enemigo(usa, Y).
 
+# Ejecución del programa
+
+![image](https://github.com/user-attachments/assets/a86b8ca1-acc7-4204-8274-fa659ba43962)
+
+
+
 
 
 
