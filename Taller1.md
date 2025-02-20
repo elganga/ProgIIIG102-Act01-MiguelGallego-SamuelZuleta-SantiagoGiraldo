@@ -94,9 +94,8 @@ hija(X,Y) :- madre(Y,X), mujer(X).
 
 # Herman@s
 
-
-
-
+hermano(X,Y) :- padre(Z,X), padre(Z,Y), hombre(X), X\=Y.
+hermano(X,Y) :- madre(Z,X), madre(Z,Y)
 
 
 
