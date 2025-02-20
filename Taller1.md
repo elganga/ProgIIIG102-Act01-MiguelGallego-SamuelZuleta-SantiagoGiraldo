@@ -2,6 +2,8 @@
 
 # Actividad 1 
 
+# Primer punto de la actividad
+
  1. De acuerdo a la siguiente imagen de árbol genealógico, construya una lógica de 
  predicados donde las relaciones directas se generen por hechos y las relacion de 
  mas de una generación se obtengan mediante reglas.
@@ -153,7 +155,7 @@ tio(X, Y) :- hermana(X, Z), madre(Z, Y), mujer(X).
 
 
 
-
+# Segundo punto de la actividad
 
 2. La ley dice que es un crimen para un Estadounidense vender armas a naciones
 hostiles. Corea del Sur, enemigo de Estados Unidos, tiene algunos misiles, y todos
