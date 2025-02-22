@@ -89,9 +89,11 @@ mujer(ling).
 # Hij@s
 
 hijo(X,Y) :- padre(Y,X), hombre(X).
+
 hijo(X,Y) :- madre(Y,X), hombre(X).
 
 hija(X,Y) :- padre(Y,X), mujer(X).
+
 hija(X,Y) :- madre(Y,X), mujer(X).
 
 
@@ -112,10 +114,9 @@ tio(X, Y) :- hermano(X, Z), padre(Z, Y), hombre(X).
 
 tio(X, Y) :- hermano(X, Z), madre(Z, Y), hombre(X).
 
-tio(X, Y) :- hermana(X, Z), padre(Z, Y), mujer(X).
+tia(X, Y) :- hermana(X, Z), padre(Z, Y), mujer(X).    
 
-tio(X, Y) :- hermana(X, Z), madre(Z, Y), mujer(X).
-
+tia(X, Y) :- hermana(X, Z), madre(Z, Y), mujer(X).
 
 # Abuel@s
 
