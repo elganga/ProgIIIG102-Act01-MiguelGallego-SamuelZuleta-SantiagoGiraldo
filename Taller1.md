@@ -83,6 +83,18 @@ mujer(maggie).
 
 mujer(ling).
 
+conyugue(homero, marge).
+
+conyugue(abraham, mona).
+
+conyugue(clancy, jacqueline).
+
+conyugue(marge, homero).
+
+conyugue(mona, abraham).
+
+conyugue(jacqueline, clancy).
+
 
 # Reglas 
 
