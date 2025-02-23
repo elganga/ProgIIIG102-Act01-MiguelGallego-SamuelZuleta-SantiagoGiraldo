@@ -120,13 +120,9 @@ tia(X, Y) :- hermana(X, Z), madre(Z, Y), mujer(X).
 
 # Abuel@s
 
-abuelo(X, Y) :- hombre(X), padre(X, Z), padre(Z, Y).
+abuelo(X, Y) :- hombre(X), (padre(X, Z), padre(Z, Y); padre(X, Z), madre(Z, Y)).
 
-abuelo(X, Y) :- hombre(X), madre(X, Z), padre(Z, Y).
-
-abuela(X, Y) :- mujer(X), madre(X, Z), padre(Z, Y).
-
-abuela(X, Y) :- mujer(X), madre(X, Z), madre(Z, Y).
+abuela(X, Y) :- mujer(X), (madre(X, Z), padre(Z, Y); madre(X, Z), madre(Z, Y)).
 
 
 # Sobrinos
