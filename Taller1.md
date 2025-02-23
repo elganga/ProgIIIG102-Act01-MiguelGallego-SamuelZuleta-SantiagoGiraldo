@@ -180,6 +180,13 @@ prima(X, Y) :- madre(Z, X), madre(W, Y), hermano(Z, W), mujer(X).
 
 prima(X, Y) :- madre(Z, X), madre(W, Y), hermana(Z, W), mujer(X).
 
+# Niet@s
+
+nieto(X, Y) :- hombre(X), (padre(Y, Z), padre(Z, X); madre(Y, Z), padre(Z, X)).
+
+nieta(X, Y) :- mujer(X), (padre(Y, Z), padre(Z, X); madre(Y, Z), padre(Z, X); padre(Y, Z), madre(Z, X); madre(Y, Z), madre(Z, X)).
+
+
 
 # Segundo punto de la actividad
 
