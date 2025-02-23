@@ -200,6 +200,13 @@ nieto(X, Y) :- hombre(X), (padre(Y, Z), padre(Z, X); madre(Y, Z), padre(Z, X)).
 nieta(X, Y) :- mujer(X), (padre(Y, Z), padre(Z, X); madre(Y, Z), padre(Z, X); padre(Y, Z), madre(Z, X); madre(Y, Z), madre(Z, X)).
 
 
+# Ejecución de programa
+
+![image](https://github.com/user-attachments/assets/831bfa67-031e-4130-998c-ca9b90ed01d7)
+
+![image](https://github.com/user-attachments/assets/15aebd30-f2ca-4bb3-88ae-08d1dda3c6fc)
+
+
 
 # Segundo punto de la actividad
 
